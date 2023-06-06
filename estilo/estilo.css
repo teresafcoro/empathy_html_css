@@ -48,6 +48,7 @@ h1 {
     font-weight: 200;
     line-height: 8px;
     text-transform: inherit;
+    padding: 5px;
 }
 /* Especificidad: 002 */
 h1 span {
@@ -74,6 +75,7 @@ span {
 }
 /* Especificidad: 001 */
 p {
+    font-size: 18px;
     width: 50%;
 }
 /* Especificidad: 002 */
@@ -104,6 +106,16 @@ figure svg:hover {
 /* Especificidad: 002 */
 a svg {
     margin-left: 5%;
+}
+/* Especificidad: 001 */
+ul {
+    list-style-type: none;
+    margin-left: 5%;
+}
+/* Especificidad: 001 */
+li {
+    padding: 5px;
+    font-size: 18px;
 }
 /* Especificidad: 001 */
 form {
