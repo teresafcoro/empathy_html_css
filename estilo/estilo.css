@@ -3,23 +3,23 @@ body {
     background-image: url("../multimedia/fondo.jpg");
     background-size: cover;
     font-family: 'Poppins', sans-serif;
-    color: #000;
+    color: black;
     display: grid;
     gap: 10px;
     padding: 10px;
 }
 /* Especificidad: 001 */
 nav {
-    padding: 18px;
-    margin: 18px;
+    padding: 12px;
+    margin: 12px;
     text-align: left;
 }
 /* Especificidad: 001 */
 a {    
     text-decoration: none;
-    color: #000;
+    color: black;
     position: relative;
-    font-size: 20px;
+    font-size: 22px;
     margin-left: 50px;
     padding: 10px;
 }
@@ -40,7 +40,7 @@ nav a:hover:after {
 }
 /* Especificidad: 001 */
 main {
-    margin: 12%;
+    margin: 8%;
 }
 /* Especificidad: 001 */
 h1 {
@@ -65,7 +65,7 @@ h1 span {
 }
 /* Especificidad: 001 */
 h2 {
-    font-size: 35px;
+    font-size: 24px;
     margin-left: 5%;
 }
 /* Especificidad: 001 */
@@ -81,8 +81,10 @@ figure img {
     width: 20%;
     height: auto;
     border-radius: 50%;
+    border-style: dashed;
+    border-color: #8C3616;
     margin-left: 5%;
-    padding: 1%;
+    margin-top: 5%;
 }
 /* Especificidad: 002 */
 figure figcaption {
@@ -91,4 +93,58 @@ figure figcaption {
 /* Especificidad: 002 */
 figure svg {
     padding: 15px;
+    transition: .5s, color .10s;
+    border-radius: 5%;
+}
+/* Especificidad: 012 */
+figure svg:hover {
+    box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+    transform: translate(0px, 5px);
+}
+/* Especificidad: 002 */
+a svg {
+    margin-left: 5%;
+}
+/* Especificidad: 001 */
+form {
+    position: absolute;
+    display: grid;
+    align-items: start;
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+/* Especificidad: 001 */
+input, textarea {
+    display: block;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #8C3616;
+    padding: 13px;
+    margin-bottom: 10px;
+    width: 50%;
+    box-sizing: border-box;
+}
+/* Especificidad: 001 */
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+/* Especificidad: 010 */
+[type="submit"] {
+    width: 50%;
+    background: #8C3616;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+/* Especificidad: 020 */
+[type="submit"]:hover {
+    background:#8C3616;
 }
