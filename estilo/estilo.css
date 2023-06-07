@@ -5,13 +5,10 @@ body {
     font-family: 'Poppins', sans-serif;
     color: black;
     display: grid;
-    gap: 10px;
-    padding: 10px;
 }
 /* Especificidad: 001 */
 nav {
-    padding: 12px;
-    margin: 12px;
+    padding: 20px;
     text-align: left;
 }
 /* Especificidad: 001 */
@@ -40,7 +37,7 @@ nav a:hover:after {
 }
 /* Especificidad: 001 */
 main {
-    margin: 8%;
+    margin: 4%;
 }
 /* Especificidad: 001 */
 h1 {
@@ -66,8 +63,8 @@ h1 span {
 }
 /* Especificidad: 001 */
 h2 {
-    font-size: 24px;
-    margin-left: 5%;
+    font-size: 22px;
+    margin-left: 6%;
 }
 /* Especificidad: 001 */
 span {
@@ -85,12 +82,12 @@ figure img {
     border-radius: 50%;
     border-style: dashed;
     border-color: #8C3616;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-left: 8%;
 }
 /* Especificidad: 002 */
 figure figcaption {
-    margin-left: 12%;
+    margin-left: 14%;
 }
 /* Especificidad: 002 */
 figure svg {
@@ -116,6 +113,10 @@ ul {
 li {
     padding: 5px;
     font-size: 18px;
+}
+/* Especificidad: 002 */
+li svg {
+    margin-right: 1%;
 }
 /* Especificidad: 001 */
 form {
@@ -155,6 +156,7 @@ textarea {
     cursor: pointer;
     color: white;
     font-size: 18px;
+    margin-bottom: 2%;
 }
 /* Especificidad: 020 */
 [type="submit"]:hover {
