@@ -162,3 +162,40 @@ textarea {
 [type="submit"]:hover {
     background:#8C3616;
 }
+/* Media queries for screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Especificidad: 001 */
+    body {
+        display: block;
+    }
+    /* Especificidad: 001 */
+    a {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+    /* Especificidad: 001 */
+    h1 {
+        font-size: 50px;
+    }
+    /* Especificidad: 001 */
+    p {
+        width: 100%;
+    }
+    /* Especificidad: 002 */
+    figure img {
+        width: 50%;
+        margin-left: 25%;
+    }
+    /* Especificidad: 002 */
+    figure figcaption {
+        margin-left: 0;
+        text-align: center;
+    }
+    /* Especificidad: 001 */
+    form {
+        position:relative;
+        width: 100%;
+        margin-left: 25%;
+    }
+}
